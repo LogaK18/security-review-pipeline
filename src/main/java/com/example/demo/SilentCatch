@@ -1,0 +1,9 @@
+public class SilentCatch {
+    public static void main(String[] args) {
+        try {
+            throw new RuntimeException("Something went wrong");
+        } catch (Exception e) {
+            // Vulnerability: swallowed exception
+        }
+    }
+}
